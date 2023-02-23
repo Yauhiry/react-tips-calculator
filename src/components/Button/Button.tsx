@@ -1,14 +1,12 @@
 import { ButtonHTMLAttributes } from 'react';
 import { StyledButton } from './styles';
 
-interface SubmitButtonProps {
-  type: ButtonHTMLAttributes<HTMLButtonElement>['type'];
-  isDisabled: boolean;
-}
-
-export const SubmitButton = ({ type, isDisabled }: SubmitButtonProps) => {
+export const SubmitButton = ({
+  type,
+  disabled,
+}: ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
-    <StyledButton type={type} disabled={isDisabled}>
+    <StyledButton type={type} disabled={disabled}>
       Ohhhoooo 🍻
     </StyledButton>
   );

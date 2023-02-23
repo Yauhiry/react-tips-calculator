@@ -55,7 +55,7 @@ export const Form = () => {
         />
       </InputGroup>
       <Total>Total: {total.toFixed(2)}$</Total>
-      <SubmitButton type="submit" isDisabled={isDisabled} />
+      <SubmitButton type="submit" disabled={isDisabled} />
     </StyledForm>
   );
 };

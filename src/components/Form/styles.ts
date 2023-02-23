@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const StyledForm = styled.form`
   display: grid;
   grid-gap: 45px;
-  width: clamp(331px, 43%, 456px);
+  width: clamp(371px, 43%, 496px);
+  padding: 20px;
 `;
 const Title = styled.h1`
   justify-self: center;

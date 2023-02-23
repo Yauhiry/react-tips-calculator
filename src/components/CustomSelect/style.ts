@@ -40,13 +40,10 @@ export const selectStyles: StylesConfig<TipsOption> = {
     ...styles,
     gridColumn: `3 / 4`,
     justifySelf: 'right',
+    padding: '0px 24px',
   }),
-  indicatorSeparator: (styles) => ({
+  dropdownIndicator: (styles, { selectProps }) => ({
     ...styles,
-    display: 'none',
-  }),
-  dropdownIndicator: (styles) => ({
-    ...styles,
-    paddingRight: 22,
+    transform: selectProps.menuIsOpen ? 'rotate(180deg)' : undefined,
   }),
 };
